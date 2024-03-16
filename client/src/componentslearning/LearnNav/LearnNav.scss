@@ -1,0 +1,614 @@
+
+// .learnnavbar {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 20px;
+//     width: 100%;
+//     background-color: #000000;
+//     color: white;
+//     border-bottom: white;
+  
+//     .logo {
+//       font-size: 24px;
+//       font-weight: bold;
+//     }
+  
+//     .icon{
+//         color: azure;
+//         display: flex;
+//         flex-direction: row;
+//         gap: 10px;
+//             cursor: pointer;
+//             padding: 20px;
+//             justify-content: space-between;
+
+//             border: radius 100px white solid;
+//     }
+
+//     .menu {
+//         display: flex;
+//         flex-direction: row;
+//         // padding-left: 30px;
+//         gap: 150px;
+//         justify-content: space-between;
+
+      
+//         ul {
+//           list-style: none;
+//           padding-left: 50px;
+//           align-items: center;
+//           display: flex;
+//           flex-direction: row;
+    
+//           li {
+//             margin-right: 10px;
+
+//             a {
+//               text-decoration: none;
+//               color: white;
+//             }
+//           }
+//         }
+    
+//         &.open {
+//           display: block;
+//         }
+    
+//         @media screen and (max-width: 768px) {
+//           position:fixed;
+
+//           top: 100px;
+//           right: 5px;
+          
+          
+//           background-color: #000000;
+//           display: none;
+        
+//           margin-right: 10px;
+//           width:100%;
+//           // height: 45;
+    
+//           ul {
+//             flex-direction: column;
+//             align-items: center;
+    
+//             li {
+//               margin: 10px 10px;
+    
+//               a {
+//                 font-size: 18px;
+//               }
+//             }
+//           }
+//         }
+//       }
+    
+//       .mobile-toggle {
+//         display: none;
+//         cursor: pointer;
+    
+//         @media screen and (max-width: 768px) {
+//           display: block;
+//         }
+        
+//         .bar {
+//             width: 25px;
+//             height: 3px;
+//             background-color: white;
+//             margin: 5px 0;
+//               margin-right: 10px;
+    
+//           &.open {
+//             background-color: #333;
+//           }
+//         }
+//       }
+//   }
+  
+
+
+// .learnnavbar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px;
+//   background-color: #000000;
+//   color: white;
+//   border-bottom: 1px solid #ccc;
+//   @media screen and (max-width: 768px) {
+//     .logo{
+//       visibility: hidden;
+//     }
+//   }
+
+//   .logo {
+//     font-size: 24px;
+//     font-weight: bold;
+//   }
+
+// // Search Items
+
+
+
+//   //Login Properties
+//   .icon{
+//       color: azure;
+//       display: flex;
+//       flex-direction: row;
+//           gap: 10px;
+//           cursor: pointer;
+//           padding: 20px;
+//           justify-content: space-between;
+//           /* Note that you only needs to edit the config to customize the button! */
+//           margin-right: 30px;
+// .profileicon{
+//   &:hover{
+//     background-color: white;
+//     color: black;
+//     cursor: pointer;
+//     border-radius: 10px;
+//     border: 20px;
+//   }
+// }
+// .signInButton {
+//   /* Config start */
+//   --signIn_width: 6rem;
+//   --signIn_height: 2.5rem;
+//   --signIn_bottomLeftTriangleSideLength: 1rem;
+//   --signIn_topRightTriangleSideLength: 0.9rem;
+//   /* Config end */
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border: 1px solid white;
+//   width: 6rem;
+//   height: 2.5rem;
+//   background-color: #000000;
+//   overflow: hidden;
+// }
+
+// .signInButton::before {
+//   position: absolute;
+//   content: "";
+//   bottom: 0;
+//   left: 0;
+//   width: 0;
+//   height: 0;
+//   border-width: 0 var(--signIn_bottomLeftTriangleSideLength) var(--signIn_bottomLeftTriangleSideLength) 0;
+//   border-style: solid;
+//   border-color: transparent transparent white transparent;
+//   transition-timing-function: ease-in-out;
+//   transition-duration: 0.2s;
+// }
+
+// .signInButton::after {
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   right: 0;
+//   width: calc(var(--signIn_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+//   height: calc(var(--signIn_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+//   outline: 1px solid white;
+//   transform: translate(50%, -50%) rotate(45deg);
+//   transition-timing-function: ease-in-out;
+//   transition-duration: 0.2s;
+// }
+
+// .signInButton:hover {
+//   cursor: pointer;
+// }
+
+// .signInButton:hover::before {
+//   --signIn_bottomLeftTriangleSideLength: calc(var(--signIn_width) + var(--signIn_height) - var(--signIn_topRightTriangleSideLength) + (var(--signIn_topRightTriangleSideLength) * 0.3));
+// }
+
+// .signInButton:focus-visible::before {
+//   --signIn_bottomLeftTriangleSideLength: calc(var(--signIn_width) + var(--signIn_height) - var(--signIn_topRightTriangleSideLength) + (var(--signIn_topRightTriangleSideLength) * 0.3));
+// }
+
+// .signInButton:hover::after {
+//   transform: translate(calc(50% + var(--signIn_topRightTriangleSideLength) * 0.1), calc((50% + var(--signIn_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
+// }
+
+// .signInButton:focus-visible::after {
+//   transform: translate(calc(50% + var(--signIn_topRightTriangleSideLength) * 0.1), calc((50% + var(--signIn_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
+// }
+
+// .signInButton:hover>.signInButtonText {
+//   color: black;
+// }
+
+// .signInButton:focus-visible>.signInButtonText {
+//   color: black;
+// }
+
+// .signInButtonText {
+//   margin: auto 0;
+//   color: white;
+//   font-size: 0.875rem;
+//   line-height: 1.25rem;
+//   font-weight: 700;
+//   text-align: center;
+//   z-index: 1;
+//   transition-timing-function: ease-in-out;
+//   transition-duration: 0.2s;
+// }
+
+
+//   }
+
+//   .menu {
+//       display: flex;
+//       flex-direction: row;
+//       // padding-left: 30px;
+//       gap: 5px;
+//       // justify-content: space-between;
+
+    
+//       ul {
+//         list-style: none;
+//         padding-left: 80px;
+//         align-items: center;
+//         display: flex;
+//         flex-direction: row;
+  
+//         li {
+//           margin-right: 20px;
+       
+//           a {
+//             text-decoration: none;
+//             color: white;
+//           }
+//         }
+//       }
+  
+//       &.open {
+//         display: block;
+//       }
+  
+//       @media screen and (max-width: 768px) {
+//         position:fixed;
+
+//         top: 100px;
+//         right: 5px;
+//         background-color: #ee1111;
+//         display: none;
+      
+//         margin-right: 10px;
+//         width: 100%;
+//         height: 40%;
+  
+//         ul {
+//           flex-direction: column;
+//           align-items: center;
+  
+//           li {
+//             margin: 10px 10px;
+  
+//             a {
+//               font-size: 18px;
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     .mobile-toggle {
+//       position: fixed;
+//       display: none;
+//       cursor: pointer;
+  
+//       @media screen and (max-width: 768px) {
+//         display: block;
+//       }
+      
+//       .bar {
+//           width: 25px;
+//           height: 3px;
+//           background-color: white;
+//           margin: 5px 0 ;
+//           margin-right: 10px;
+//           right: 0;
+  
+//         &.open {
+//           background-color: #333;
+//         }
+//       }
+//     }
+// }
+
+
+
+
+
+.learnnavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  @media screen and (max-width: 768px) {
+    .logo{
+      visibility: hidden;
+    }
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+// Search Items
+
+
+  //Login Properties
+  .icon{
+      color: azure;
+      display: flex;
+      flex-direction: row;
+          gap: 10px;
+          cursor: pointer;
+          padding: 20px;
+          justify-content: space-between;
+          /* Note that you only needs to edit the config to customize the button! */
+          margin-right: 30px;
+.profileicon{
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  &:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+}
+.profilecontainer{
+  
+}
+
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 35px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 4, 4);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // gap: 2px;
+  &:hover{
+    justify-content: space-between;
+  }
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+}
+.signInButton{
+  /* Config start */
+  --signIn_width: 6rem;
+  --signIn_height: 2.5rem;
+  --signIn_bottomLeftTriangleSideLength: 1rem;
+  --signIn_topRightTriangleSideLength: 0.9rem;
+  /* Config end */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 6rem;
+  margin-right: 20px;
+  height: 2.5rem;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.signInButton::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 0 var(--signIn_bottomLeftTriangleSideLength) var(--signIn_bottomLeftTriangleSideLength) 0;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.signInButton::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: calc(var(--signIn_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+  height: calc(var(--signIn_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+  outline: 1px solid white;
+  transform: translate(50%, -50%) rotate(45deg);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.signInButton:hover {
+  cursor: pointer;
+}
+
+.signInButton:hover::before {
+  --signIn_bottomLeftTriangleSideLength: calc(var(--signIn_width) + var(--signIn_height) - var(--signIn_topRightTriangleSideLength) + (var(--signIn_topRightTriangleSideLength) * 0.3));
+}
+
+.signInButton:focus-visible::before {
+  --signIn_bottomLeftTriangleSideLength: calc(var(--signIn_width) + var(--signIn_height) - var(--signIn_topRightTriangleSideLength) + (var(--signIn_topRightTriangleSideLength) * 0.3));
+}
+
+.signInButton:hover::after {
+  transform: translate(calc(50% + var(--signIn_topRightTriangleSideLength) * 0.1), calc((50% + var(--signIn_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
+}
+
+.signInButton:focus-visible::after {
+  transform: translate(calc(50% + var(--signIn_topRightTriangleSideLength) * 0.1), calc((50% + var(--signIn_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
+}
+
+.signInButton:hover>.signInButtonText {
+  color: black;
+}
+
+.signInButton:focus-visible>.signInButtonText {
+  color: black;
+}
+
+.signInButtonText {
+  margin: auto 0;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+
+ 
+
+  .menu {
+      display: flex;
+      flex-direction: row;
+      // padding-left: 30px;
+      gap: 5px;
+      // justify-content: space-between;
+
+    
+      ul {
+        list-style: none;
+        padding-left: 80px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+  
+        li {
+          margin-right: 20px;
+       
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+  
+      &.open {
+        display: block;
+      }
+  
+      @media screen and (max-width: 768px) {
+        position:fixed;
+
+        top: 100px;
+        right: 5px;
+        background-color: #ee1111;
+        display: none;
+      
+        margin-right: 10px;
+        width: 100%;
+        height: 40%;
+  
+        ul {
+          flex-direction: column;
+          align-items: center;
+  
+          li {
+            margin: 10px 10px;
+  
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  
+    .mobile-toggle {
+      position: fixed;
+      display: none;
+      cursor: pointer;
+  
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+      
+      .bar {
+          width: 25px;
+          height: 3px;
+          background-color: white;
+          margin: 5px 0 ;
+          margin-right: 10px;
+          right: 0;
+  
+        &.open {
+          background-color: #333;
+        }
+      }
+    }
+}

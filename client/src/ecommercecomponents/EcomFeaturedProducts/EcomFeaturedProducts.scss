@@ -1,0 +1,36 @@
+.featuredProducts {
+  
+  .top {
+      margin: 100px;
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        h1{
+          font-size: 20px;
+        }
+      }
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  
+      h1 {
+        flex: 2;
+        text-transform: capitalize;
+      }
+  
+      p{
+        flex:3;
+        color:rgb(137, 137, 137)
+      }
+    }
+  
+    .bottom{
+      margin-top: 30px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+  }

@@ -1,0 +1,153 @@
+.searchContainer{
+
+  .searchFor {
+    margin-top: 38px;
+    font: 1.4em Helvetica;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .searchBar {
+    font: 1.2em Helvetica;
+    color: #252525;
+    margin: 6px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #f9f1f1;
+  
+  }
+  .searchBar:focus {
+    outline: none;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .button {
+    font: 1.2em Helvetica;
+    color: #333333;
+  }
+  
+  .button {
+    background-color: #919191;
+    border-radius: 8px;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font: 1.2em Times New Roman;
+    padding: 10px 20px;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    transition: color 100ms;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+  }
+  
+  /* POPUP */
+  
+  /* popupContainer, which dims and blurs background when popup is open */
+  .popupContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    
+    .popup {
+    /* centers popup absolutely */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    
+    background-color: #c8d1d8;
+    max-height: 80vh;
+    overflow-y: scroll;
+    min-width: 70vw;
+    
+    .closeButton {
+    color: #444444;
+    float: right;
+    position: sticky;
+    font-size: 22px;
+    top: 10px;
+    right: 10px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .closeButton:hover {
+    color: #554e4e;
+  }
+}
+}
+  
+  .songCard {
+    margin: 40px;
+    min-width: 640px;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .songCard:hover {
+    border: 1px solid #2098d1;
+    background-color: #2098d1;
+    color: white;
+  }
+  
+  .songData {
+    display: flex;
+    margin: 30px 42px;
+  }
+  
+  .albumImg {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .textData {
+    font: 1.4em Helvetica;
+    height: 100%;
+    margin: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .artist {
+    margin: 12px 0px;
+    font: 1.6em Helvetica;
+  }
+  
+  .title {
+    margin: 12px 0px;
+  
+    font: 1.3em Helvetica;
+  }
+  
+  .tempo {
+    margin: 12px 0px;
+    font: 1.2em Helvetica;
+  }
+  
+  .key {
+    margin: 12px 0px;
+    font: 0.8em Helvetica;
+  }
+  
+  .album {
+    margin: 12px 0px;
+    font: 0.8em Helvetica;
+  }
+  
+}

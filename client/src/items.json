@@ -1,0 +1,183 @@
+[
+    {
+      "id": 1,
+      "name": "Sunglasses",
+      "category": "clothing",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1682596879/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/257106_0_bqvgip.png",
+      "price": "0.14",
+      "rating": 4,
+      "stock": 12
+    },
+    {
+      "id": 2,
+      "name": "Blue T-Shirt",
+      "category": "clothing",
+      "image": "https://www.beyoung.in/api/cache/catalog/products/women_images_update_27_6_2022/navy_blue_womens_plain_t-shirt_base_700x933.jpg",
+      "price": "5.6",
+      "rating": 4.5,
+      "stock": 15
+    },
+    {
+      "id": 3,
+      "name": "Black Jeans",
+      "category": "clothing",
+      "image": "https://rukminim1.flixcart.com/image/1300/1550/knj7wcw0/jean/h/j/k/30-z3-mjrp-02-zaysh-original-imag26zx9eyyrs2w.jpeg?q=20&crop=false",
+      "price": "3.92",
+      "rating": 4.2,
+      "stock": 8
+    },
+    {
+      "id": 4,
+      "name": "Running Shoes",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/61ywWn5jcqS._SL1100_.jpg",
+      "price": "4.5",
+      "rating": 4.7,
+      "stock": 20
+    },
+    {
+      "id": 5,
+      "name": "Woolen Sweater",
+      "category": "clothing",
+      "image": "https://i.pinimg.com/474x/f8/b3/d1/f8b3d190d70d157d0814988f787a8e2f.jpg",
+      "price": "1.25",
+      "rating": 4.3,
+      "stock": 10
+    },
+    {
+      "id": 6,
+      "name": "Leather Belt",
+      "category": "accessories",
+      "image": "https://img0.junaroad.com/uiproducts/17645993/zoom_0-1675434799.jpg",
+      "price": "0.05",
+      "rating": 4.8,
+      "stock": 18
+    },
+    {
+      "id": 7,
+      "name": "Denim Jacket",
+      "category": "clothing",
+      "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/12288700/2021/10/21/1add2cf0-4826-441f-ae20-0cca69b899fd1634814726781-Roadster-Men-Blue-Washed-Denim-Jacket-6691634814726272-1.jpg",
+      "price": "",
+      "rating": 4.6,
+      "stock": 6
+    },
+    {
+      "id": 8,
+      "name": "Casual Sneakers",
+      "category": "footwear",
+      "image": "",
+      "price": "",
+      "rating": 4.4,
+      "stock": 14
+    },
+    {
+      "id": 9,
+      "name": "Cotton Shirt",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.1,
+      "stock": 9
+    },
+    {
+      "id": 10,
+      "name": "Sports Shorts",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.9,
+      "stock": 16
+    },
+    {
+      "id": 11,
+      "name": "Leather Wallet",
+      "category": "accessories",
+      "image": "",
+      "price": "",
+      "rating": 4.5,
+      "stock": 11
+    },
+    {
+      "id": 12,
+      "name": "Hooded Sweatshirt",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.2,
+      "stock": 7
+    },
+    {
+      "id": 13,
+      "name": "Formal Dress Shoes",
+      "category": "footwear",
+      "image": "",
+      "price": "",
+      "rating": 4.7,
+      "stock": 19
+    },
+    {
+      "id": 14,
+      "name": "Graphic T-Shirt",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.3,
+      "stock": 13
+    },
+    {
+      "id": 15,
+      "name": "Sweatpants",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.8,
+      "stock": 17
+    },
+    {
+      "id": 16,
+      "name": "Beanie Hat",
+      "category": "accessories",
+      "image": "",
+      "price": "",
+      "rating": 4.6,
+      "stock": 5
+    },
+    {
+      "id": 17,
+      "name": "Summer Dress",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.4,
+      "stock": 10
+    },
+    {
+      "id": 18,
+      "name": "Suede Loafers",
+      "category": "footwear",
+      "image": "",
+      "price": "",
+      "rating": 4.2,
+      "stock": 15
+    },
+    {
+      "id": 19,
+      "name": "Oversized Sunglasses",
+      "category": "accessories",
+      "image": "",
+      "price": "",
+      "rating": 4.9,
+      "stock": 8
+    },
+    {
+      "id": 20,
+      "name": "Cargo Shorts",
+      "category": "clothing",
+      "image": "",
+      "price": "",
+      "rating": 4.7,
+      "stock": 12
+    }
+  ]
+  

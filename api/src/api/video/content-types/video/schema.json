@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "videos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tutorials": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "coursecategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::coursecategory.coursecategory",
+      "mappedBy": "videos"
+    },
+    "coursesubcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::coursesubcategory.coursesubcategory",
+      "inversedBy": "videos"
+    }
+  }
+}

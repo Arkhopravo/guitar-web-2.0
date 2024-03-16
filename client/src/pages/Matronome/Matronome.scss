@@ -1,0 +1,160 @@
+
+// @import "../../styles.scss";
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .metronome {margin: 4em 5em;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .metronome {margin: 4em 6em;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .metronome {margin: 4em 10em;}
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .metronome {margin: 4em 14em;}
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .metronome {margin: 4em 20em;}
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1500px and up) */
+  @media only screen and (min-width: 1500px) {
+    .metronome {margin: 4em 30em;}
+  }
+  
+  .metronome{
+    padding: 2em;
+    // background: rgba(255, 255, 255, 0.744);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color: rgb(91, 87, 115);
+    border: 2px  solid white;
+    .bpm{
+        font: 2.2em Helvetica;
+        align-self: center;
+        font-family: 'Times New Roman', Times, serif  ;
+        
+        .bpmSetMessage {
+          align-items: center;
+            font: 0.8em Helvetica;
+            color: #842348;
+        }
+        
+        .activeBPM{
+            color: #2fff06;
+        }
+        
+        /* slider styles */ 
+        .sliderContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin: 0 auto;
+    
+}
+
+    .slider{
+    width: 70%;
+    height: 8px;
+    margin: 2em 0;
+    border-radius: 5px;
+    background: rgb(255, 252, 252);
+    outline: none;
+    opacity: 0.7;
+    
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    // z-index: 1;
+    &:hover {
+        opacity: 5;
+    }
+}
+    
+    .slider::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance:none;
+    width: 30px;
+    height: 30px;
+    background: url("https://img.favpng.com/15/11/13/sixteenth-note-musical-note-half-note-vector-graphics-png-favpng-Ep5jdncdhydB87skdyCBt8h5s.jpg");
+    z-index: 5;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url("../../buttons/note.svg");
+    cursor: pointer;
+  }
+  
+}
+  .timeSignature{
+      font: 1.2em Helvetica;
+    color: hwb(0 98% 0%);
+    margin: 0.3em 0em;
+  }
+  
+  .circleButton{
+      height: 5em;
+    margin: 0px 0.3em;
+    opacity: 1;
+    transition: opacity .2s;
+}
+  
+.circleButton:hover{
+    opacity: 1;
+}
+  
+  .plusMinus{
+    height: 50px;
+    width: 50px;
+    margin: 0em 0.5em;
+    opacity: 1.8;
+    transition: opacity .2s;
+    color: #decece;
+  
+}
+  
+  .plusMinus:hover{
+    // opacity: 1;
+    color: white;
+  }
+  
+  .measure{
+      color: #ffffff;
+  }
+  
+  .selectStyle {
+    //   border: 2px solid #000000;
+    //  border-radius: 6px;
+    //   opacity: 0.9;
+    //   transition: opacity .2s; 
+    background-color: #000000;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    padding: 2px;
+    }
+  
+    .selectStyle:hover{
+    opacity: 1;
+  }
+
+  .timeSignature{
+    margin-left:"80px";
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 60px;
+    color: rgb(227, 227, 227);
+  }
+  
+}

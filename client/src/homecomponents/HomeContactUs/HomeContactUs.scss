@@ -1,0 +1,152 @@
+.follow{
+  margin-bottom:30px ;
+  .followimage {
+  position: relative; /* Needed for absolute positioning within the container */
+  
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 100%; /* Make the image cover the entire container */
+    height: 100%; /* Make the image cover the entire container */
+    object-fit: cover; /* Ensure the image covers the container */
+    @media (max-width: 768px) {
+      width: 100%; /* Make the image cover the entire container */
+      height: 100%; 
+    }
+  }
+
+  .contact-container {
+    position: absolute;
+    // height: 44%;
+    top: 50%; /* Position at the vertical center of the container */
+    left: 30%; /* Position at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Center the form within the container */
+    background-color: rgb(167 0 0 / 71%); /* Semi-transparent background */
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(157, 157, 157) inset,
+    0px 5px 10px rgba(255, 254, 254, 0.849),
+    0px -10px 10px rgb(35, 35, 35) inset;
+    border-radius: 20px;
+    max-width: 400px;
+    
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   color: #000000;
+
+    @media (max-width: 768px) {
+      /* Adjust styles for mobile screens */
+      // top: auto; /* Remove vertical positioning for centering on small screens */
+      align-items: center;
+      transform:rotateZ('angle');
+      border-radius: 10px;
+      padding: 20px;
+      margin-left: 100px;
+      
+    }
+  
+  }
+
+  label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ededed;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+   
+  }
+  ::placeholder {
+    color: #000000; /* Placeholder text color */
+    font-style: italic; /* Style of the placeholder text */
+  }
+
+  .Btn {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 45px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0) inset,
+    0px 5px 10px rgba(255, 254, 254, 0.849),
+    0px -10px 10px rgb(0, 0, 0) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Btn::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+  }
+  
+  .Btn::after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+  }
+  
+  .Btn:hover {
+    animation: jello-horizontal 0.9s both;
+  }
+  
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+}
+}

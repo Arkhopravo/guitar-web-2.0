@@ -1,0 +1,46 @@
+.courseitem {
+  display: flex;
+  flex-wrap: wrap; /* Ensure flex items wrap to the next line */
+  gap: 40px;
+  z-index: 1;
+  overflow-x: auto;
+  padding: 30px;
+  justify-content: space-between;
+  text-decoration: hidden;
+  
+}
+
+.courseitem > div {
+  flex: 1 0 calc(25% - 40px); /* Four items per row with 40px gap */
+  max-width: calc(25% - 40px);
+}
+
+@media (max-width: 700px) {
+  .courseitem {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .courseitem > div {
+    flex: 1 0 100%;
+    max-width: 100%;
+    
+  }
+}
+
+
+@media (max-width: 893px) {
+  .courseitem {
+    // flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .courseitem > div {
+    flex: 1 0 100%;
+    max-width: calc(50% - 20px);
+    
+  }
+}
+
+

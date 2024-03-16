@@ -1,0 +1,132 @@
+
+
+.categories{
+  display: flex;
+  // height: 50%;
+  padding: 130px;
+  gap: 10px;
+  // margin: 90px 50px;
+
+  .col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .col-1{
+      flex: 2;
+    }
+ 
+    .row{
+      // display: flex;/
+      // flex-direction: column;
+      flex: 1;
+      .elements{
+          // display: flex;
+          // flex-direction: row;
+        .link{
+          img{
+            // height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -500;
+      }
+
+        text-decoration: none;
+        button{
+          // position: absolute;
+          // min-width: 100px;
+          // width: fit-content;
+          // height: 50px;
+          // padding: 10px;
+          // top: 0;
+          // bottom: 0;
+          // left: 0;
+          // right: 0;
+          // margin: auto;
+          // cursor: pointer;
+          // border: none;
+          // background-color: rgb(21, 17, 17);
+          // text-transform: uppercase;
+          // font-weight: 500;
+          // z-index: 500;
+
+
+            z-index: 500;
+            color: black;
+            background-color: rgb(242, 242, 242);  
+            height: 50px;
+            width: 100px;
+            align-self:center;
+            align-items: center;
+            margin-left: -60%;
+            filter: drop-shadow(0 0 0 #fffdef);
+            transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+            // z-index: -5;
+            // margin-top: 50%;
+
+          &:hover{
+            // background: transparent;
+            background-color: #fb9f5e;
+            box-shadow: 0 0 10px #fec1958c;
+           
+          }
+        }
+        
+        
+        
+        
+        
+        
+      }
+    }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .categories {
+      margin: 0px;
+     display: flex;
+     align-items:center;
+     flex-direction: column;
+     position: relative;
+     .col{
+      //  flex-direction: column;
+      // flex: 0;
+        flex-wrap: wrap;
+       .row{
+         display:flex;
+         flex-direction: row;
+         gap: 4px;
+        position: relative;
+        padding: 10px;
+        overflow: hidden;
+         img{
+          height: 100%;
+          width: 90%;
+          z-index: -500;
+         }
+
+         .link{
+
+           button{
+             z-index: 500;
+             height: 40px;
+             width: 40px;
+             font-size: 8px;
+
+           
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+
+

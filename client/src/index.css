@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif; 
+    /* -webkit-font-smoothing: antialiased; */
+    /* -moz-osx-font-smoothing: grayscale; */
+    /* background-color: #000000; */
+    /* color: #ffffff; */
+    font-size: 14px;
+}  
+
+/* tailwind.css */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *, *:before, *:after {
+    box-sizing: border-box;
+  } */
+/* 
+  @tailwind base;
+@tailwind components;
+@tailwind utilities; */

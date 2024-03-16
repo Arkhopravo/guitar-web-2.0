@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coursecategories",
+  "info": {
+    "singularName": "coursecategory",
+    "pluralName": "coursecategories",
+    "displayName": "coursecategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categorytitle": {
+      "type": "string"
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::video.video",
+      "inversedBy": "coursecategories"
+    },
+    "coursesubcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::coursesubcategory.coursesubcategory",
+      "mappedBy": "coursecategories"
+    }
+  }
+}
