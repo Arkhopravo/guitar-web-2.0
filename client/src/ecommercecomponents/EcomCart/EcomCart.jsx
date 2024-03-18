@@ -1,16 +1,17 @@
-import React from 'react';
-import './EcomCart.scss';
+import React, { useContext } from 'react';
+
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeItem, resetCart } from '../../redux/cartReducer';
 import {makeRequest } from '../../makeRequest';
 import {loadStripe} from "@stripe/stripe-js"
+import { DarkModeContext } from '../../context/darkModeContext';
 
 
 function EcomCart({onClose}) {
   const dispatch = useDispatch();
   const products = useSelector(state => state.cart.products);
-
+  const { toggle, darkMode } = useContext(DarkModeContext);
   
   const totalPrice = () => {
     let total = 0;
@@ -45,40 +46,38 @@ function EcomCart({onClose}) {
 
 
   return (
-    <div className="cart">
-      <h1>Products in your cart</h1>
-      
-      {products?.map(item => (
-        <div className="item" key={item.id}>
-          <img src={import.meta.env.VITE_API_UPLOAD_URL + item.img} alt="" />
-          <div className="details">
-            <h1>{item.title}</h1>
-            <p>{item.desc}</p>
-            <div className="price">
-              {item.quantity} x ₹{item.price}
-            </div>
-          </div>
-          <DeleteOutlinedIcon
-            className="delete"
-            onClick={() => dispatch(removeItem(item.id))}
-          />
+    <div class={` absolute right-20  top-24 z-40 bg-white p-5 shadow-2xl ${darkMode  ? 'bg-slate-500 ' : ' border-slate-500 '}`}>
+    <h1 class="text-slate-600 text-lg text-left font-medium mb-5">Products in your cart</h1>
+  
+    {products?.map(item => (
+      <div class="item flex items-center gap-5 mb-5" key={item.id}>
+        <img src={import.meta.env.VITE_API_UPLOAD_URL + item.img} alt="" class="w-20 h-24 object-cover" />
+        <div class="details">
+          <h1 class="text-black font-medium text-lg">{item.title}</h1>
+          <p class="text-gray-600 mb-2 text-sm">{item.desc}</p>
+          <div class="price text-blue-500">{item.quantity} x ₹{item.price}</div>
         </div>
-      ))}
-      <div className="total">
-        <span>SUBTOTAL</span>
-        <span>₹{totalPrice()}</span>
+        <DeleteOutlinedIcon
+          className="delete text-red-500 text-lg cursor-pointer"
+          onClick={() => dispatch(removeItem(item.id))}
+        />
       </div>
-      {/* <Elements stripe={stripePromise} options={options}> */}
-
-      <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
-      {/* <PaymentElement /> */}
-      {/* <button>PROCEED TO CHECKOUT</button> */}
-      {/* </Elements> */}
-      <button onClick={onClose}>CLOSE</button>
-      <span className="reset" onClick={() => dispatch(resetCart())}>
-        Reset Cart
-      </span>
+    ))}
+    <div class={`total flex justify-between font-medium text-lg mb-4 ${darkMode ? 'text-white' : 'text-black'}`}>
+      <span>SUBTOTAL</span>
+      <span>₹{totalPrice()}</span>
     </div>
+  <div className=" m-1">
+
+  
+    <button class={`bg-blue-500 text-white py-2 m-2 px-5 rounded flex items-center justify-center gap-2 cursor-pointer`} onClick={handlePayment}>PROCEED TO CHECKOUT</button>
+    <button onClick={onClose} class={`bg-gray-200 m-2 text-black py-2 px-5 rounded cursor-pointer`}>CLOSE</button>
+    <span class={`reset text-red-500 text-sm cursor-pointer`} onClick={() => dispatch(resetCart())}>
+      Reset Cart
+    </span>
+  </div>
+  </div>
+  
   );
 }
 

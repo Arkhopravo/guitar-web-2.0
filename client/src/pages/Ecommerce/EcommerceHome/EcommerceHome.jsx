@@ -13,7 +13,7 @@ function EcommerceHome() {
     <div className='home' style={{height:"100%", width:"100%", objectFit:"contain"}}>
       <EcomNavbar/>
       <EcomSlider/>
-     <div className="flex justify-left px-24 items-center ">
+     <div className="flex justify-left px-24 m-4 items-center ">
       <Link to="/store">
       <button className='bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out flex items-center justify-center space-x-2'>
         <p className='text-3xl'>Want to Shop using Crypto?</p>

@@ -29,12 +29,12 @@ function HomeAbout() {
     <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
       {/* <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl  dark:text-white">Guitar Tutorial hub and online store</h1> */}
     <h1 className="mt-1 text-lg font-semibold md:text-2xl">Guitar Tutorial hub and online store</h1>
-      <p class="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">Explore New😃</p>
+      <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">Explore New😃</p>
     </div>
     <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
       <img src="https://imagedelivery.net/5ejkUOtsMH5sf63fw6q33Q/0b70b44a-faa0-4a9a-9622-f6ed904e5600/public" alt="" class="w-full h-full object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full" loading="lazy"/>
       <img src="https://img.freepik.com/free-photo/3d-rendering-cartoon-like-girl-playing-guitar_23-2150797742.jpg" 
-      alt="" class="hidden w-full md:h-full object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32" loading="lazy"/>
+      alt="" className="hidden w-full md:h-full object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32" loading="lazy"/>
       <img 
             src=
             "https://storage.prompt-hunt.workers.dev/clf927yry0013ky08q96juo0t_1" 
