@@ -1,5 +1,4 @@
 import React from 'react'
-import './EcomContact.scss'
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -8,14 +7,16 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 
 function EcomContact() {
   return (
-    <div className='contact'>
-          <div className="wrapper">
+    <div className='bg-blue-600 text-white p-4 flex justify-center'>
+          <div className="w-1/2 flex items-center justify-between">
         <span>BE IN TOUCH WITH US:</span>
         <div className="mail">
-          <input type="text" placeholder="Enter your e-mail..." />
-          <button>JOIN US</button>
+          <input
+          className="p-3 border-none rounded-l-md"
+          type="text" placeholder="Enter your e-mail..." />
+          <button className='p-3 text-white bg-slate-700 rounded-r-md border-none'>JOIN US</button>
         </div>
-        <div className="icons">
+        <div className="flex gap-3">
           <FacebookIcon />
           <InstagramIcon />
           <TwitterIcon />

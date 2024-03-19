@@ -1,117 +1,60 @@
-import React from 'react'
-import './EcomCategories.scss'
-import {Link, useNavigate} from 'react-router-dom'
-function EcomCategories({item}) {
-  const navigate = useNavigate();
+import React, { useContext } from 'react';
+import { DarkModeContext } from '../../context/darkModeContext';
+import { Link } from 'react-router-dom';
+
+const Button = () => {
+  const { toggle, darkMode } = useContext(DarkModeContext);
   return (
-    <div className="categories">
-         <div className="col">
-        <div className="row">
-            <div className="elements">
+    <button className={`z-3 p-3 rounded-md m-2 absolute justify-center items-center ${darkMode? 'bg-slate-600 ':'bg-slate-300'}  `}>
+      Click Me
+    </button>
+  )
+}
 
-              <Link className="link"  to={`/ecommerceproducts/${6}`}>
-                <img
-                  src="images\il_1080xN.4400097227_cjk5.webp"
-                  alt=""
-                  />
-                    <button>
-                        Sale
-                     
-                    </button>
-                </Link>
-            </div>
+const EcomCategories = () => {
+  return (
+  
+  
+    <div className="">
+     <div className=" items-center justify-center md:grid md:grid-rows-3 md:grid-flow-col md:mx-56 mx-24 gap-2 w-4/6">
+        <div className=''>
+          <Link to="/ecommerceproducts/4">
+          <Button/>
+          <img className='rounded-md' src="https://img.freepik.com/premium-photo/boy-girl-playing-guitar-woods_942686-6139.jpg" alt="" loading="lazy"/>
+          </Link>
         </div>
-        <div className="row">
-        <div className="elements">
+        
+        <div className="">
+          <Link to="/ecommerceproducts/5">
 
-          <Link to={`/ecommerceproducts/${6}`} className="link">
-          <img
-            src='https://ae01.alicdn.com/kf/H78683ab66fdc402f92a761ff3fbad65b1/Customized-electric-guitar-rosewood-fingerboard-3-pickups-can-be-bounhttps://ae01.alicdn.com/kf/H78683ab66fdc402f92a761ff3fbad65b1/Customized-electric-guitar-rosewood-fingerboard-3-pickups-can-be-bound-change-color-stock.jpg_.webp'
-            alt=""
-            />
-          <button>
-              Guitars
-          </button>
-            </Link>
-            </div>
+          <Button/>
+          <img className='  rounded-md' src="https://img.freepik.com/premium-photo/man-playing-guitar-front-mountain-landscape_925551-345.jpg?w=900" alt="" loading="lazy"/>
+          </Link>
         </div>
-      </div>
-      <div className="col">
-        <div className="row">
-          {" "}
-          <div className="elements">
-            <Link to={`/ecommerceproducts/${8}`} className="link">
-
-          <img
-            src="public\images\BaseGutiar.jpg"
-            alt=""
-            />
-          <button>
-              Bass Guitars
-          </button>
-            </Link>
-            </div>
+        <div className=''>
+          <Link to="/ecommerceproducts/6">
+          <Button/>
+          <img className='rounded-md' src="https://img.freepik.com/premium-photo/young-playing-guitar-enjoy-with-friends_988095-456.jpg?w=1060" alt="" loading="lazy"/>
+          </Link>
         </div>
-      </div>
-
-
-      
-      <div className="col col-l">
-        <div className="row">
-          <div className="col">
-            <div className="row">
-            <div className="elements">
-
-              <Link to={`/ecommerceproducts/${4}`} className="link">
-              <img
-                src="public\images\Teenage-girl-playing-a-ukulele.jpg"
-                alt=""
-                />
-              <button>
-                  Ukulele
-              </button>
-                </Link>
-                </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="row">
-              {" "}
-              <div className="elements">
-
-                <Link to={`/ecommerceproducts/${7}`}className="link">
-              <img
-                src="https://i.etsystatic.com/7314652/r/il/a853ce/2284322428/il_570xN.2284322428_5492.jpg"
-                alt=""
-                />
-              <button>
-                  Mandoline
-              </button>
-                </Link>
-            </div>
-                </div>
-          </div>
+        <div className=''>
+          <Link to="/ecommerceproducts/7">
+          <Button/>
+          <img className=' rounded-md' src="https://img.freepik.com/premium-photo/stock-photo-back-school_896782-14873.jpg?w=900" alt="" loading="lazy"/>
+          </Link>
         </div>
-        <div className="row">
-        <div className="elements">
+        <div className="">
+          <Link to="/ecommerceproducts/8">
 
-          <Link to={`/ecommerceproducts/${9}`} className="link">
-          <img
-            src="https://cdn.mos.cms.futurecdn.net/cNAZM5nqjFT2DJA3C3jpE4.jpg"
-            alt=""
-            />
-          <button>
-            Synthesizer
-          </button>
-            </Link>
-            </div>
+          <Button/>
+          <img className='rounded-md' src="https://img.freepik.com/premium-photo/vasant-panchami-festival-day-india-concept-spring-india_145644-16929.jpg?w=1060" alt="" loading="lazy"/>
+          </Link>
         </div>
       </div>
     </div>
 
 
- 
-  )
-}
+  );
+};
 
-export default EcomCategories
+export default EcomCategories;
